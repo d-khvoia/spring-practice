@@ -28,17 +28,6 @@
         <property name="firstName" value="Bro" />
     </bean>
 
-    <bean id="child" class="com.techfinancials.practice.Child" name="cld">
-        <property name="relatives">
-            <list>
-                <ref bean="father" />
-                <ref bean="mother" />
-                <ref bean="brother" />
-            </list>
-        </property>
-        <property name="school" ref="sch" />
-    </bean>
-
-    <alias name="school" alias="sch" />
+    <bean id="child" class="com.techfinancials.practice.Child" name="cld" autowire="byName" />
 
 </beans>
