@@ -13,24 +13,28 @@
         <property name="name" value="Vasyl Stus Foreign Languages Specialized school" />
     </bean>
 
+    <bean id="father" class="com.techfinancials.practice.Person">
+        <property name="gender" value="MALE" />
+        <property name="firstName" value="Dad" />
+    </bean>
+
+    <bean id="mother" class="com.techfinancials.practice.Person">
+        <property name="gender" value="FEMALE" />
+        <property name="firstName" value="Mum" />
+    </bean>
+
+    <bean id="brother" class="com.techfinancials.practice.Person">
+        <property name="gender" value="MALE" />
+        <property name="firstName" value="Bro" />
+    </bean>
+
     <bean id="child" class="com.techfinancials.practice.Child" name="cld">
-        <property name="mother">
-            <bean class="com.techfinancials.practice.Person">
-                <property name="gender" value="FEMALE" />
-                <property name="firstName" value="Mum" />
-            </bean>
-        </property>
-        <property name="father">
-            <bean class="com.techfinancials.practice.Person">
-                <property name="gender" value="MALE" />
-                <property name="firstName" value="Dad" />
-            </bean>
-        </property>
-        <property name="brother">
-            <bean class="com.techfinancials.practice.Person">
-                <property name="gender" value="MALE" />
-                <property name="firstName" value="Bro" />
-            </bean>
+        <property name="relatives">
+            <list>
+                <ref bean="father" />
+                <ref bean="mother" />
+                <ref bean="brother" />
+            </list>
         </property>
         <property name="school" ref="sch" />
     </bean>
