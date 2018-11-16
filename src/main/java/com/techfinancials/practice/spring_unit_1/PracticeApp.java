@@ -1,11 +1,8 @@
-package com.techfinancials.practice;
+package com.techfinancials.practice.spring_unit_1;
 
-import org.apache.naming.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 @SpringBootApplication

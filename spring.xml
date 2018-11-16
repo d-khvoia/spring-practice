@@ -3,31 +3,31 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="kitten" class="com.techfinancials.practice.Kitten">
+    <bean id="kitten" class="com.techfinancials.practice.spring_unit_1.Kitten">
         <constructor-arg value="British Shorthair" />
         <constructor-arg type="int" value="2" />
     </bean>
 
-    <bean id="school" class="com.techfinancials.practice.School">
+    <bean id="school" class="com.techfinancials.practice.spring_unit_1.School">
         <property name="number" value="200" />
         <property name="name" value="Vasyl Stus Foreign Languages Specialized school" />
     </bean>
 
-    <bean id="father" class="com.techfinancials.practice.Person">
+    <bean id="father" class="com.techfinancials.practice.spring_unit_1.Person">
         <property name="gender" value="MALE" />
         <property name="firstName" value="Dad" />
     </bean>
 
-    <bean id="mother" class="com.techfinancials.practice.Person">
+    <bean id="mother" class="com.techfinancials.practice.spring_unit_1.Person">
         <property name="gender" value="FEMALE" />
         <property name="firstName" value="Mum" />
     </bean>
 
-    <bean id="brother" class="com.techfinancials.practice.Person">
+    <bean id="brother" class="com.techfinancials.practice.spring_unit_1.Person">
         <property name="gender" value="MALE" />
         <property name="firstName" value="Bro" />
     </bean>
 
-    <bean id="child" class="com.techfinancials.practice.Child" name="cld" autowire="byName" />
+    <bean id="child" class="com.techfinancials.practice.spring_unit_1.Child" name="cld" autowire="byName" />
 
 </beans>

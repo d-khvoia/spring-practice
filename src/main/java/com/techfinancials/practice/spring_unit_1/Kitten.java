@@ -1,4 +1,4 @@
-package com.techfinancials.practice;
+package com.techfinancials.practice.spring_unit_1;
 
 public class Kitten {
 
